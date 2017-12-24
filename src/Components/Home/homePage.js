@@ -9,12 +9,12 @@ const HomePage = (props) => {
             </div>
             <div className="col-md-6 lead">
                 <h1 className="text-center">
-                    Welcome to the 2017 Crawfish Cup
+                    Welcome to the 2018 Crawfish Cup
                 </h1>
                 <br />
                 <p className="text-center">
                     Thank you for your interest in this year's Crawfish Cup Tennis Tournament benefitting the American Cancer Society.
-                    This year's event is scheduled for <strong>April 28-30, 2017</strong> at Highland Road Tennis Center.<br /><br />
+                    This year's event is scheduled for <strong>April 6-8, 2018</strong> at Highland Road Tennis Center.<br /><br />
 
                     Unlike previous years, this event is not going to be a mixed doubles tournament. Rather, the format will now consist of
                     three doubles pairs on level (team format). Please see the <strong>"Rules & Info"</strong> page for more specific details.  <br /><br />

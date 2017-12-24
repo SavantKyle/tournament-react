@@ -10,10 +10,12 @@ const InformationPage = () => {
                     <small>
                         Kelly Savant &nbsp;
                         <a href="mailto:kellyt515@gmail.com"><i className="fa fa-envelope-o"> kellyt515@gmail.com</i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="tel:1-225-202-3048"><i className="fa fa-mobile-phone"></i> 225-202-3048</a><br />
+                        <a href="tel:1-225-202-3048"><i className="fa fa-mobile-phone"></i> 225-202-3048</a>
+                        &nbsp;&nbsp; (Event Coordinator) <br />
                         Kyle Savant &nbsp;
                         <a href="mailto:kyle.savant@outlook.com"><i className="fa fa-envelope-o"> kyle.savant@outlook.com</i></a>&nbsp;&nbsp;
                         <a href="tel:1-225-223-8809"><i className="fa fa-mobile-phone"></i> 225-223-8809</a>
+                        &nbsp;&nbsp; (Tournament Director) 
                     </small>
                 </dd>
                 <dt>Event Date:</dt>
@@ -40,14 +42,14 @@ const InformationPage = () => {
                 <dd>
                     <small>
                         $450 per team of 6 players ($75 per) through February 28th; $510 thereafter ($85 per). <br />
-                        Additional players may be added for $25 per up to a max of 8 players. <br/>
-                        Note: Only 6 awards are given to the winning team!
+                        Additional players may be added for $25 per player up to a max of 8 players. <br />
+                        Note: Only 6 prizes are given to the winning team!
                     </small>
                 </dd>
                 <dt>Divisions:</dt>
                 <dd>
                     <small>
-                        Men / Women teams will compete in three doubles pairs. (This is <strong>not</strong> a mixed event) <br />
+                        Men / Women teams will compete in three doubles pairs. (This is <strong><u>not</u></strong> a mixed event) <br />
                         The team to win 2 out of 3 courts will win the match. <br />
                         2018 ratings will be used. The levels are: 3.0 or below, 3.5, 4.0 (with 4.5 allowances) <br />
                         &nbsp; <strong>**NOTE**</strong> 4.0 division may have two 4.5 players and are only allowed to play on court 1. <br />
@@ -74,7 +76,7 @@ const InformationPage = () => {
                 <dt>Prizes:</dt>
                 <dd>
                     <small>
-                        Prizes will be rewarded to teams placing first in their division.
+                        Prizes will be rewarded to teams placing first in their division. <br />
                         Note: Only 6 awards will be given to the winning team.
                     </small>
                 </dd>
