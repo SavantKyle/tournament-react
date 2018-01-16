@@ -1,24 +1,31 @@
 import React from 'react';
 import acsLogo from '../../assets/acs_logo.jpg';
 
-const CausePage = (props) => {
-    const styleLogo = { width: "200px" };
-    const styleParagraph = { "border-bottom": "dotted 2px" };
+const styles = {
+    logo: {
+        width: "200px"
+    },
+    paragraph: {
+        "border-bottom": "dotted 2px"
+    }
+}
+
+const causePage = (props) => {
     return (
         <div>
             <div>
-                <img src={acsLogo} alt="img" style={styleLogo} className="img-responsive center-block" />
+                <img src={acsLogo} alt="img" style={styles.logo} className="img-responsive center-block" />
             </div>
             <div className="text-center">
                 We are available 24 hours day, 7 days a week, at 1-800-227-2345 or by visiting
-    <a target="_blank" rel="noopener noreferrer" href="http://www.cancer.org"> Cancer.Org</a>
+                <a target="_blank" rel="noopener noreferrer" href="http://www.cancer.org"> Cancer.Org</a>
             </div>
             <div>
                 <h1 className="text-center"><strong>What We Do</strong></h1>
                 <p className="lead text-center">
                     While most people know us for our research, we do so much more. We attack cancer from every angle. We promote healthy lifestyles to help you prevent cancer. We research cancer and its causes to find more answers and better treatments. We fight for lifesaving policy changes. We provide everything from emotional support to the latest cancer information for those who have been touched by cancer. And we do it all 24 hours a day, 7 days a week.
-    </p>
-                <div style={styleParagraph}></div>
+                </p>
+                <div style={styles.paragraph}></div>
                 <div className="lead text-center">
                     <div className="col-md-6">
                         <h3><strong>Encouraging Prevention</strong></h3>
@@ -50,4 +57,4 @@ const CausePage = (props) => {
     );
 }
 
-export default CausePage;
+export default causePage;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NotFoundPage = () => {
+const notFoundPage = () => {
     return (
         <div className="text-center">
             <blockquote>
@@ -12,4 +12,4 @@ const NotFoundPage = () => {
     );
 }
 
-export default NotFoundPage;
+export default notFoundPage;

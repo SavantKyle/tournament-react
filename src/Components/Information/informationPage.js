@@ -1,6 +1,6 @@
 import React from 'react';
 
-const InformationPage = () => {
+const informationPage = () => {
     return (
         <div>
             <h1 className="text-center">Tournament Rules & Information</h1>
@@ -15,7 +15,7 @@ const InformationPage = () => {
                         Kyle Savant &nbsp;
                         <a href="mailto:kyle.savant@outlook.com"><i className="fa fa-envelope-o"> kyle.savant@outlook.com</i></a>&nbsp;&nbsp;
                         <a href="tel:1-225-223-8809"><i className="fa fa-mobile-phone"></i> 225-223-8809</a>
-                        &nbsp;&nbsp; (Tournament Director) 
+                        &nbsp;&nbsp; (Tournament Director)
                     </small>
                 </dd>
                 <dt>Event Date:</dt>
@@ -42,8 +42,8 @@ const InformationPage = () => {
                 <dd>
                     <small>
                         $450 per team of 6 players ($75 per) through February 28th; $510 thereafter ($85 per). <br />
-                        Additional players may be added for $25 per player up to a max of 8 players. <br />
-                        Note: Only 6 prizes are given to the winning team!
+                        Additional players may be added for $25 per player. <br />
+                        **Only 6 prizes will be awarded to the winning team.
                     </small>
                 </dd>
                 <dt>Divisions:</dt>
@@ -61,7 +61,8 @@ const InformationPage = () => {
                 <dd>
                     <small>
                         Tournament will follow standard USTA rules and guidelines. <br />
-                        All matches are the best of two tie-break sets with a match tie-break in lieu of a 3rd set.
+                        All matches are the best of two tie-break sets with a match tie-break in lieu of a 3rd set. <br />
+                        In the event of inclement weather, match format may be changed at the discretion of the tournament director.
                     </small>
                 </dd>
                 <dt>Food / Drink:</dt>
@@ -73,11 +74,18 @@ const InformationPage = () => {
                         Soft drinks will be provided for the crawfish boil on Saturday night.
                     </small>
                 </dd>
-                <dt>Prizes:</dt>
+                <dt>Player Gifts:</dt>
                 <dd>
                     <small>
-                        Prizes will be rewarded to teams placing first in their division. <br />
-                        Note: Only 6 awards will be given to the winning team.
+                        All teams will be provided with player gifts. <br />
+                        **Only 6 gifts will be provided per team.
+                    </small>
+                </dd>
+                <dt>Awards:</dt>
+                <dd>
+                    <small>
+                        Prizes will be awarded to teams placing first in their division. <br />
+                        **Only 6 prizes will be awarded to the winning team.
                     </small>
                 </dd>
                 <dt>Refunds:</dt>
@@ -93,4 +101,4 @@ const InformationPage = () => {
     );
 }
 
-export default InformationPage;
+export default informationPage;

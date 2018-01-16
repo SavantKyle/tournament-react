@@ -1,7 +1,7 @@
 import React from 'react';
 import crawfishCupLogo from '../../assets/crawfishCupLogo.jpg';
 
-const HomePage = (props) => {
+const homePage = (props) => {
     return (
         <div>
             <div className="col-md-4">
@@ -28,4 +28,4 @@ const HomePage = (props) => {
     );
 }
 
-export default HomePage;
+export default homePage;

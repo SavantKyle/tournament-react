@@ -1,7 +1,8 @@
 import React from 'react';
 
-const SponsorPage = () => {
-    const style = { margin: "0px" };
+const style = { margin: "0px" };
+
+const sponsorPage = () => {
     return (
         <div className="col-md-12 container-fluid">
             <div className="text-center">
@@ -38,4 +39,4 @@ const SponsorPage = () => {
     );
 }
 
-export default SponsorPage;
+export default sponsorPage;
