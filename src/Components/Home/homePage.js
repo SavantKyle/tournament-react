@@ -1,5 +1,5 @@
 import React from 'react';
-import crawfishCupLogo from '../../assets/crawfishCupLogo.jpg';
+import crawfishCupLogo from '../../assets/2018_Crawfish_Cup_Logo.png';
 
 const homePage = (props) => {
     return (
