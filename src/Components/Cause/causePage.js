@@ -17,7 +17,7 @@ const causePage = (props) => {
                 <img src={acsLogo} alt="img" style={styles.logo} className="img-responsive center-block" />
             </div>
             <div className="text-center">
-                We are available 24 hours day, 7 days a week, at 1-800-227-2345 or by visiting
+                We are available 24 hours day, 7 days a week, at <a href="tel:1-800-227-2345"> 1-800-227-2345</a> or by visiting
                 <a target="_blank" rel="noopener noreferrer" href="http://www.cancer.org"> Cancer.Org</a>
             </div>
             <div>
@@ -40,12 +40,12 @@ const causePage = (props) => {
                         <p>We fund and conduct lifesaving research that helps us better understand, prevent, and find cures for cancer.</p>
                     </div>
                     <div className="col-md-6">
-                        <h3><strong>Fighting for What"s Right</strong></h3>
+                        <h3><strong>Fighting for What's Right</strong></h3>
                         <p>We work with lawmakers to pass laws to defeat cancer and rally communities worldwide to join our mission.</p>
                     </div>
                     <div className="col-md-6">
                         <h3><strong>Access to Care</strong></h3>
-                        <p>We"re working every day to free the world from the pain and suffering from cancer, but we can"t continue our progress while millions of underinsured and uninsured Americans don"t have access to lifesaving cancer care.</p>
+                        <p>We're working every day to free the world from the pain and suffering from cancer, but we can't continue our progress while millions of underinsured and uninsured Americans don't have access to lifesaving cancer care.</p>
                     </div>
                     <div className="col-md-6">
                         <h3><strong>Supporting Multicultural Communities</strong></h3>
