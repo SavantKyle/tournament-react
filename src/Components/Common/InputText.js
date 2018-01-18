@@ -77,7 +77,7 @@ class InputText extends React.Component {
                         onChange={this.handleChange}
                         onBlur={this.handleBlur}
                     />
-                    {/* <div className="input text-danger text-center">{this.state.validationMessage}</div> */}
+                    <div className="input text-danger text-center">{this.state.validationMessage}</div>
                 </div>
             </div>
         );
