@@ -39,8 +39,9 @@ class PlayerInfo extends React.Component {
     render() {
         const { firstName, lastName, email, phone, playerId } = this.props;
         const removePlayer = playerId > 6 ? <div className="text-center"><span onClick={this.handleRemovePlayerClick} className="text-danger fa fa-remove" style={{cursor: "pointer"}}>Remove</span></div> : null;
+        const backgroundColor = playerId % 2 === 0 ? "bg-info" : "bg-success"; 
         return (
-            <div className="col-md-offset-3 col-md-6 Card well-lg">
+            <div className={`col-md-offset-3 col-md-6 Card well-lg ${backgroundColor}`}>
                 <h3 className="text-center">Player {this.handlePlayerNumbering()}</h3>
                 <InputText name="firstName" value={firstName} placeholder="First Name" onChange={this.handleFirstNameChange} validate={{ required: true }} />
                 <InputText name="lastName" value={lastName} placeholder="Last Name" onChange={this.handleLastNameChange} validate={{ required: true }} />

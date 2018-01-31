@@ -6,7 +6,7 @@ class StripeCardSection extends Component {
   render() {
     return (
       <div className="col-md-offset-4 col-md-4">        
-        <div className="h2">Credit Card</div>
+        <div className="h2">Credit Card (${this.props.totalCost})</div>
         <CardElement className="StripeElement" style={{base: {fontSize: '21px'}}} />
         <br/>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import validation from '../../helpers/validation'; 
 
 class InputText extends React.Component {
     state = {
@@ -11,42 +12,29 @@ class InputText extends React.Component {
         this.setState({ wrapperClass: 'form-group has-error', validationMessage: message, isValid: false });
     }
 
-    validateRequired = (value, valid) => {
-        if (value.trim() === "" || value === null) {
-            this.updateValidationMessage('REQUIRED');
-            return false;
-        }
-        return true;
-    }
-
-    validateMinLength = (value, valid, minLength) => {
-        if (value.length < minLength) {
-            this.updateValidationMessage(`The value entered must have at least ${minLength} characters`);
-            return false;
-        }
-        return true;
-    }
-
-    validateMaxLength = (value, valid, maxLength) => {
-        if (value.length > maxLength) {
-            this.updateValidationMessage(`The value entered must cannot have more than ${maxLength} characters`);
-            return false;
-        }
-        return true;
-    }
-
     checkValidation = (event) => {
         const value = event.target.value;
 
         let valid = true;
         if (this.props.validate.required) {
-            valid = valid && this.validateRequired(value, valid);
+            if (valid && !validation.requiredIsValid(value)) {
+                this.updateValidationMessage('REQUIRED');
+                valid = false;
+            }
         }
         if (this.props.validate.minLength) {
-            valid = valid && this.validateMinLength(value, valid, this.props.validate.minLength)
+            const minLength = this.props.validate.minLength;
+            if (valid && !validation.minLengthIsValid(value, minLength)) {
+                this.updateValidationMessage(`The value entered must have at least ${minLength} characters`);
+                valid = false;
+            }
         }
         if (this.props.validate.maxLength) {
-            valid = valid && this.validateMaxLength(value, valid, this.props.validate.maxLength)
+            const maxLength = this.props.validate.maxLength;
+            if (valid && !validation.maxLengthIsValid(value, maxLength)) {
+                this.updateValidationMessage(`The value entered must cannot have more than ${maxLength} characters`);
+                valid = false;
+            }
         }
         if (valid) {
             this.setState({ wrapperClass: "form-group text-center", validationMessage: "" })

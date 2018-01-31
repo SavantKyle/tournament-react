@@ -1,11 +1,12 @@
 import React from 'react';
-import { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo } from '../../assets/logos';
+import { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo } from '../../assets/logos';
 
 const sponsorPage = () => {
     const styles = {
         kickstands: { width: "200px" },
         sushiMasa: { width: "80%", marginTop: "90px", marginBottom: "60px" },
-        theLondoner: { width: "300px", marginTop: "20px" }
+        theLondoner: { width: "300px", marginTop: "20px" },
+        pinnacle: { width: "375px" }
     }
 
     return (
@@ -17,13 +18,17 @@ const sponsorPage = () => {
             <div className="panel panel-danger text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Rose Level Sponsors</h2>
                 <div className="panel-body">
-
+                    <a href="http://www.thepinnacleroof.com" target="_blank" rel="noopener noreferrer">
+                        <img src={pinnacleLogo} alt="" style={styles.pinnacle} className="img-responsive center-block" />
+                    </a>
                 </div>
             </div>
             <div className="panel panel-warning text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Bronze Level Sponsors</h2>
                 <div className="panel-body">
-
+                    <p>
+                        Interested in becoming a sponsor? Please contact Kelly at (225)202-3048 . 
+                    </p>
                 </div>
             </div>
             <div className="panel panel-success text-center">

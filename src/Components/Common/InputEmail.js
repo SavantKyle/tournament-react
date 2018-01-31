@@ -1,9 +1,10 @@
 import React from 'react';
+import validation from '../../helpers/validation';
 
 class InputEmail extends React.Component {
     state = {
         wrapperClass: 'form-group',
-        validationMessage: ' ',
+        validationMessage: '',
         isValid: true
     }
 
@@ -11,31 +12,18 @@ class InputEmail extends React.Component {
         this.setState({ wrapperClass: 'form-group has-error', validationMessage: message, isValid: false });
     }
 
-    validateRequired = (value, valid) => {
-        if (value.trim() === "" || value === null) {
-            this.updateValidationMessage('REQUIRED');
-            return false;
-        }
-        return true;
-    }
-
-    validateEmailFormat = (value, valid) => {
-        const regex = RegExp(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
-        if (!regex.test(value)) {
-            this.updateValidationMessage('You must enter a valid email address');
-            return false;
-        }
-        return true;
-    }
-
     checkValidation = (event) => {
         const value = event.target.value;
 
         let valid = true;
-        if (this.props.validate.required) {
-            valid = valid && this.validateRequired(value, valid);
+        if (!validation.requiredIsValid(value)) {
+            this.updateValidationMessage('REQUIRED');
+            valid = false;
         }
-        valid = valid && this.validateEmailFormat(value, valid)
+        if (valid && !validation.emailFormatIsValid(value)) {
+            this.updateValidationMessage('Not a valid email address');
+            valid = false;
+        }
         if (valid) {
             this.setState({ wrapperClass: "form-group text-center", validationMessage: "" })
         }

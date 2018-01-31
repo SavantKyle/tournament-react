@@ -16,12 +16,19 @@ const homePage = (props) => {
                     Thank you for your interest in this year's Crawfish Cup Tennis Tournament benefitting the American Cancer Society.
                     This year's event is scheduled for <strong>April 6-8, 2018</strong> at Highland Road Tennis Center.<br /><br />
 
-                    Unlike previous years, this event is not going to be a mixed doubles tournament. Rather, the format will now consist of
-                    three doubles pairs on level (team format). Please see the <strong>"Rules & Info"</strong> page for more specific details.  <br /><br />
+                    Thanks to your support last year our tournament was honored with two awards <br />
+
+                    <strong>Adult Tournament of the Year for the State of Louisiana </strong>
+                    <br/>
+                    AND
+                    <br/>
+                    <strong>Adult Tournament of the Year for the Southern Section</strong>
+
+                    <br /><br />
 
                     As always we will be serving Friday night dinner, Saturday lunch, Saturday night crawfish boil, and Sunday lunch. <br /><br />
 
-                    We are looking forward to yet another great event!
+                    We really appreciate all of your participation and look forward to another fantastic tournament!
                 </p>
             </div >
         </div >

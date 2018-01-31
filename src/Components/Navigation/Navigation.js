@@ -15,8 +15,8 @@ const navigationPage = () => {
                 <li><NavLink activeStyle={style} to="/cause"><span className="fa fa-heartbeat"></span> The Cause</NavLink></li>
                 <li><NavLink activeStyle={style} to="/sponsors"><span className="fa fa-star"></span> Sponsors</NavLink></li>
                 <li><NavLink activeStyle={style} to="/information"><span className="fa fa-info-circle"></span> Rules & Info</NavLink></li>
-                {/* <li><NavLink activeStyle={style} isActive={false} to="/register"><span className="fa fa-check-square-o"></span> Register</NavLink></li> */}
-                <li className="disabled"><a><span className="fa fa-check-square-o"></span> Register</a></li>
+                <li><NavLink activeStyle={style} isActive={false} to="/register"><span className="fa fa-check-square-o"></span> Register</NavLink></li>
+                {/* <li className="disabled"><a><span className="fa fa-check-square-o"></span> Register</a></li> */}
                 <li>
                     <a href="http://www.facebook.com/groups/crawfishcuptennis" rel="noopener noreferrer" target="_blank">
                         <span className="fa fa-facebook-square"></span> Follow Us

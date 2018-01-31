@@ -1,9 +1,10 @@
 import React from 'react';
+import validation from '../../helpers/validation';
 
 class InputPhone extends React.Component {
     state = {
         wrapperClass: 'form-group text-center',
-        validationMessage: ' ',
+        validationMessage: '',
         isValid: true
     }
 
@@ -11,30 +12,18 @@ class InputPhone extends React.Component {
         this.setState({ wrapperClass: 'form-group has-error', validationMessage: message, isValid: false });
     }
 
-    validateRequired = (value, valid) => {
-        if (value.trim() === "" || value === null) {
-            this.updateValidationMessage('REQUIRED');
-            return false;
-        }
-        return true;
-    }
-
-    validateMinLength = (value, valid, minLength) => {
-        if (value.length < minLength) {
-            this.updateValidationMessage('Phone number is incomplete')
-            return false;
-        }
-        return true;
-    }
-
     checkValidation = (event) => {
         const value = event.target.value;
 
         let valid = true;
-        if (this.props.validate.required) {
-            valid = valid && this.validateRequired(value, valid);
+        if (!validation.requiredIsValid(value)) {
+            this.updateValidationMessage('REQUIRED');
+            valid = false;
         }
-        valid = valid && this.validateMinLength(value, valid, 13)
+        if(valid && !validation.minLengthIsValid(value, 13)){
+            this.updateValidationMessage('Too short; 10 digit phone number required');
+            valid = false; 
+        }
         if (valid) {
             this.setState({ wrapperClass: "form-group text-center", validationMessage: "" })
         }

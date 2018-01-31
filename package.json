@@ -2,7 +2,7 @@
   "name": "tournament-react",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:51240/",
   "dependencies": {
     "axios": "^0.17.1",
     "bootstrap": "^3.3.7",
