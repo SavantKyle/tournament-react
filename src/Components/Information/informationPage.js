@@ -35,14 +35,19 @@ const informationPage = () => {
                 <dd>
                     <small>
                         Registration Closes Friday, March 30, 2018 at midnight (or when full). <br />
-                        This is an adult tournament so in order to participate you must be 18 years of age or older.
+                        This is an adult tournament so in order to participate you must be 18 years of age or older. <br/>
+                        Alcohol may only be consumed by adults aged 21 and older and will be strictly enforced.  
                     </small>
                 </dd>
                 <dt>Entry Fee:</dt>
                 <dd>
                     <small>
-                        $450 per team of 6 players ($75 per) through February 28th; $510 thereafter ($85 per). <br />
-                        Additional players may be added for $25 per player. <br />
+                        Before March 1st: <br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp; $450 per team of 6 players ($75 per). <br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp; Additional players may be added for $25 per player. <br/>
+                        March 1st and after: <br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp; $510 per team of 6 players ($85 per). <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp; Additional players may be added for $35 per player. <br />
                         **Only 6 prizes will be awarded to the winning team.
                     </small>
                 </dd>
@@ -52,7 +57,7 @@ const informationPage = () => {
                         Men / Women teams will compete in three doubles pairs. (This is <strong><u>not</u></strong> a mixed event) <br />
                         The team to win 2 out of 3 courts will win the match. <br />
                         2018 ratings will be used. The levels are: 3.0 or below, 3.5, 4.0 (with 4.5 allowances) <br />
-                        &nbsp; <strong>**NOTE**</strong> 4.0 division may have two 4.5 players and are only allowed to play on court 1. <br />
+                        &nbsp; <strong>**NOTE for 4.0 Division**</strong> Court 1 may, <u>optionally</u>, consist of all 4.5 players. <br />
                         Three matches will be guaranteed to each team with additional matches possible. <br />
                         Match play begins Friday night at 5:30pm and may continue through Sunday.
                     </small>

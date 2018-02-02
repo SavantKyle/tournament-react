@@ -135,7 +135,7 @@ class RegistrationForm extends Component {
             cost = (75 * 6) + ((players.length - 6) * 25);
         }
         else {
-            cost = (85 * 6) + ((players.length - 6) * 25);
+            cost = (85 * 6) + ((players.length - 6) * 35);
         }
 
         this.setState({ totalTeamCost: cost });
