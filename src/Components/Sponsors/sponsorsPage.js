@@ -1,5 +1,5 @@
 import React from 'react';
-import { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo } from '../../assets/logos';
+import { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo, ruffinosLogo } from '../../assets/logos';
 
 const sponsorPage = () => {
     const styles = {
@@ -9,9 +9,10 @@ const sponsorPage = () => {
         pinnacle: { width: "375px" },
         raisingCanes: { width: "300px", marginTop: "40px" },
         chimes: { width: "350px", marginTop: "40px" },
-        louisianaFishFry: { width: "300px", marginTop: "40px" },
-        coke: { width: "300px", marginTop: "40px", marginBottom: "40px" }, 
+        louisianaFishFry: { width: "300px", marginTop: "20px" },
+        coke: { width: "300px", marginTop: "40px", marginBottom: "40px" },
         mansurs: { width: "400px", marginTop: "60px" },
+        ruffinos: { width: "450px", marginTop: "0px" }
     }
 
     return (
@@ -25,7 +26,7 @@ const sponsorPage = () => {
             <div className="panel panel-danger text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Rose Level Sponsors</h2>
                 <div className="panel-body">
-                <p>Interested in becoming the Exclusive Rose Level sponsor? Please contact Kelly at (225)202-3048.</p>
+                    <p>Interested in becoming the Exclusive Rose Level sponsor? Please contact Kelly at (225)202-3048.</p>
                 </div>
             </div>
             <div className="panel panel-warning text-center">
@@ -49,7 +50,7 @@ const sponsorPage = () => {
                 </div>
             </div>
             <div className="panel panel-success text-center">
-                <h2 className="panel-heading" style={{ margin: "0px" }}>Food Sponsors</h2>
+                <h2 className="panel-heading" style={{ margin: "0px" }}>Food and Refreshments Provided By</h2>
                 <div className="panel-body">
                     <div className="col-md-12">
                         <div className="col-md-4">
@@ -69,26 +70,31 @@ const sponsorPage = () => {
                         </div>
                     </div>
                     <div className="col-md-12">
-                        <div className="col-md-6">
-                            <a href="http://www.louisianafishfry.com" target="_blank" rel="noopener noreferrer">
-                                <img src={louisianaFishFryLogo} alt="" style={styles.louisianaFishFry} class="img-responsive center-block" />
-                            </a>
-                        </div>
-                        <div className="col-md-6">
-                            <a href="https://mansursontheboulevard.com" target="_blank" rel="noopener noreferrer">
-                                <img src={mansursLogo} alt="" style={styles.mansurs} class="img-responsive center-block" />
-                            </a>
-                        </div>
+                        <a href="https://us.coca-cola.com/" target="_blank" rel="noopener noreferrer">
+                            <img src={cokeLogo} alt="" style={styles.coke} class="img-responsive center-block" />
+                        </a>
                     </div>
                 </div>
             </div>
             <div className="panel panel-info text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Other Sponsors</h2>
                 <div className="panel-body">
-                    <div>
-                        <a href="https://us.coca-cola.com/" target="_blank" rel="noopener noreferrer">
-                            <img src={cokeLogo} alt="" style={styles.coke} class="img-responsive center-block" />
-                        </a>
+                    <div className="col-md-12">
+                        <div className="col-md-4">
+                            <a href="http://www.ruffinosrestaurant.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={ruffinosLogo} alt="" style={styles.ruffinos} class="img-responsive center-block" />
+                            </a>
+                        </div>
+                        <div className="col-md-4">
+                            <a href="https://mansursontheboulevard.com" target="_blank" rel="noopener noreferrer">
+                                <img src={mansursLogo} alt="" style={styles.mansurs} class="img-responsive center-block" />
+                            </a>
+                        </div>
+                        <div className="col-md-4">
+                            <a href="http://www.louisianafishfry.com" target="_blank" rel="noopener noreferrer">
+                                <img src={louisianaFishFryLogo} alt="" style={styles.louisianaFishFry} class="img-responsive center-block" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
