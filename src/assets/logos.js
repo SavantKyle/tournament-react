@@ -6,5 +6,6 @@ import raisingCanesLogo from './RaisingCanes.png';
 import louisianaFishFryLogo from './louisianaFishFryLogo.jpg';
 import chimesLogo from './TheChimes.png';
 import cokeLogo from './Coca-Cola.png';
+import mansursLogo from './Mansurs.png'; 
 
-export { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo } 
+export { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo } 

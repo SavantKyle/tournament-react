@@ -1,5 +1,5 @@
 import React from 'react';
-import { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo } from '../../assets/logos';
+import { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo } from '../../assets/logos';
 
 const sponsorPage = () => {
     const styles = {
@@ -10,7 +10,8 @@ const sponsorPage = () => {
         raisingCanes: { width: "300px", marginTop: "40px" },
         chimes: { width: "350px", marginTop: "40px" },
         louisianaFishFry: { width: "300px", marginTop: "40px" },
-        coke: { width: "300px", marginTop: "40px", marginBottom: "40px" }
+        coke: { width: "300px", marginTop: "40px", marginBottom: "40px" }, 
+        mansurs: { width: "400px", marginTop: "60px" },
     }
 
     return (
@@ -68,9 +69,14 @@ const sponsorPage = () => {
                         </div>
                     </div>
                     <div className="col-md-12">
-                        <div>
-                            <a href="http://www.louisianafishfry.com/" target="_blank" rel="noopener noreferrer">
+                        <div className="col-md-6">
+                            <a href="http://www.louisianafishfry.com" target="_blank" rel="noopener noreferrer">
                                 <img src={louisianaFishFryLogo} alt="" style={styles.louisianaFishFry} class="img-responsive center-block" />
+                            </a>
+                        </div>
+                        <div className="col-md-6">
+                            <a href="https://mansursontheboulevard.com" target="_blank" rel="noopener noreferrer">
+                                <img src={mansursLogo} alt="" style={styles.mansurs} class="img-responsive center-block" />
                             </a>
                         </div>
                     </div>
