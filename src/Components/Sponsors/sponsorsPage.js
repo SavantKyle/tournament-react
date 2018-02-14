@@ -1,5 +1,5 @@
 import React from 'react';
-import { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo, ruffinosLogo } from '../../assets/logos';
+import { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo, ruffinosLogo, flemingsLogo } from '../../assets/logos';
 
 const sponsorPage = () => {
     const styles = {
@@ -12,7 +12,8 @@ const sponsorPage = () => {
         louisianaFishFry: { width: "300px", marginTop: "20px" },
         coke: { width: "300px", marginTop: "40px", marginBottom: "40px" },
         mansurs: { width: "400px", marginTop: "60px" },
-        ruffinos: { width: "450px", marginTop: "0px" }
+        ruffinos: { width: "450px", marginTop: "0px" },
+        flemings: { width: "400px", marginTop: "40px" }
     }
 
     return (
@@ -91,6 +92,13 @@ const sponsorPage = () => {
                             </a>
                         </div>
                         <div className="col-md-4">
+                            <a href="https://www.flemingssteakhouse.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={flemingsLogo} alt="" style={styles.flemings} class="img-responsive center-block" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-md-12">
+                        <div>
                             <a href="http://www.louisianafishfry.com" target="_blank" rel="noopener noreferrer">
                                 <img src={louisianaFishFryLogo} alt="" style={styles.louisianaFishFry} class="img-responsive center-block" />
                             </a>

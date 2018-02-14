@@ -8,5 +8,6 @@ import chimesLogo from './TheChimes.png';
 import cokeLogo from './Coca-Cola.png';
 import mansursLogo from './Mansurs.png'; 
 import ruffinosLogo from './Ruffinos.jpg';
+import flemingsLogo from './Flemings.png'; 
 
-export { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo, ruffinosLogo } 
+export { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo, ruffinosLogo, flemingsLogo } 
