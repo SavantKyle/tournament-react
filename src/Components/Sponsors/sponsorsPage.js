@@ -1,5 +1,5 @@
 import React from 'react';
-import { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo, ruffinosLogo, flemingsLogo } from '../../assets/logos';
+import { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo, ruffinosLogo, flemingsLogo, transformyxLogo } from '../../assets/logos';
 
 const sponsorPage = () => {
     const styles = {
@@ -13,7 +13,8 @@ const sponsorPage = () => {
         coke: { width: "300px", marginTop: "40px", marginBottom: "40px" },
         mansurs: { width: "400px", marginTop: "60px" },
         ruffinos: { width: "450px", marginTop: "0px" },
-        flemings: { width: "400px", marginTop: "40px" }
+        flemings: { width: "400px", marginTop: "40px" },
+        transformyx: { width: "800px" }
     }
 
     return (
@@ -27,7 +28,11 @@ const sponsorPage = () => {
             <div className="panel panel-danger text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Rose Level Sponsors</h2>
                 <div className="panel-body">
-                    <p>Interested in becoming the Exclusive Rose Level sponsor? Please contact Kelly at (225)202-3048.</p>
+                    <div className="col-md-12">
+                        <a href="http://www.transformyx.com/" target="_blank" rel="noopener noreferrer">
+                            <img src={transformyxLogo} alt="" style={styles.transformyx} className="img-responsive center-block" />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="panel panel-warning text-center">

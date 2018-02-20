@@ -9,5 +9,6 @@ import cokeLogo from './Coca-Cola.png';
 import mansursLogo from './Mansurs.png'; 
 import ruffinosLogo from './Ruffinos.jpg';
 import flemingsLogo from './Flemings.png'; 
+import transformyxLogo from './Transformyx.png'; 
 
-export { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo, ruffinosLogo, flemingsLogo } 
+export { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo, ruffinosLogo, flemingsLogo, transformyxLogo } 
