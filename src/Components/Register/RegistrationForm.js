@@ -21,15 +21,18 @@ class RegistrationForm extends Component {
         formIsValid: true,
         formErrors: [],
         totalTeamCost: new Date() < new Date(2018, 2, 1) ? 450 : 510,
-        success: false
+        success: false,
+        disabled: false
     };
 
     handleSubmit = (event) => {
         event.preventDefault();
+        this.setState({ disabled: true });
 
         let isValid = this.validateForm(this.state.teamInfo, this.state.players);
 
         if (!isValid) {
+            this.setState({ disabled: false });
             return;
         }
 
@@ -53,9 +56,10 @@ class RegistrationForm extends Component {
 
             axios.post('https://www.crawfishcuptennis.com/api/register/RegisterTeam', teamAndPaymentInfo)
                 .then(response =>
-                    this.setState({ success: true })
+                    this.setState({ success: true, disabled: false })
                 )
                 .catch(error => {
+                    this.setState({ disabled: false });
                     console.log(error)
                     alert('Something went wrong with your payment. If this continues to occur please notify Kyle at kyle.savant@outlook.com')
                 });
@@ -166,6 +170,12 @@ class RegistrationForm extends Component {
         if (this.state.success) {
             redirect = <Redirect to="/success" />
         }
+        let spinner = null;
+        if (this.state.disabled) {
+            spinner = <div className="col-md-12 text-center fa-4x"><i class="fa fa-spinner fa-spin"></i></div>
+        } else {
+            spinner = null;
+        }
         return (
             <form className="form-horizontal" onSubmit={this.handleSubmit}>
                 {redirect}
@@ -184,9 +194,9 @@ class RegistrationForm extends Component {
                     <div className="col-md-12 text-center">
                         <CardSection totalCost={this.state.totalTeamCost} />
                     </div>
-
+                    {spinner}
                     <div className="form-group col-md-12 text-center">
-                        <button className="btn btn-lg btn-primary" type="submit">Accept & Pay</button>
+                        <button disabled={this.state.disabled} className="btn btn-lg btn-primary" type="submit">Accept & Pay</button>
                     </div>
                 </fieldset>
             </form>
