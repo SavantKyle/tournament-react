@@ -14,7 +14,7 @@ const sponsorPage = () => {
         mansurs: { width: "400px", marginTop: "60px" },
         ruffinos: { width: "450px", marginTop: "0px" },
         flemings: { width: "400px", marginTop: "40px" },
-        transformyx: { width: "800px" }
+        transformyx: { width: "900px" }
     }
 
     return (
