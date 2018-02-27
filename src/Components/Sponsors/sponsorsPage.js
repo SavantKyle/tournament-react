@@ -1,5 +1,8 @@
 import React from 'react';
-import { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo, ruffinosLogo, flemingsLogo, transformyxLogo } from '../../assets/logos';
+import {
+    kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo,
+    chimesLogo, cokeLogo, mansursLogo, ruffinosLogo, flemingsLogo, transformyxLogo, americanFactoryDirectLogo, blueTigerLogo
+} from '../../assets/logos';
 
 const sponsorPage = () => {
     const styles = {
@@ -14,7 +17,9 @@ const sponsorPage = () => {
         mansurs: { width: "400px", marginTop: "60px" },
         ruffinos: { width: "450px", marginTop: "0px" },
         flemings: { width: "400px", marginTop: "40px" },
-        transformyx: { width: "900px" }
+        transformyx: { width: "900px" },
+        americanFactoryDirect: { width: "550px", marginTop: "20px" },
+        blueTiger: { width: "275px", marginTop: "20px" }
     }
 
     return (
@@ -38,20 +43,30 @@ const sponsorPage = () => {
             <div className="panel panel-warning text-center">
                 <h2 className="panel-heading" style={{ margin: "0px" }}>Bronze Level Sponsors</h2>
                 <div className="panel-body">
-                    <div className="col-md-4">
-                        <a href="https://www.facebook.com/Kickstandskitchen/" target="_blank" rel="noopener noreferrer">
-                            <img src={kickstandsKitchenLogo} alt="" style={styles.kickstands} className="img-responsive center-block" />
-                        </a>
+                    <div className="col-md-12">
+                        <div className="col-md-4">
+                            <a href="https://www.facebook.com/Kickstandskitchen/" target="_blank" rel="noopener noreferrer">
+                                <img src={kickstandsKitchenLogo} alt="" style={styles.kickstands} className="img-responsive center-block" />
+                            </a>
+                        </div>
+                        <div className="col-md-4">
+                            <a href="http://www.thepinnacleroof.com" target="_blank" rel="noopener noreferrer">
+                                <img src={pinnacleLogo} alt="" style={styles.pinnacle} className="img-responsive center-block" />
+                            </a>
+                        </div>
+                        <div className="col-md-4">
+                            <a href="https://www.thechimes.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={chimesLogo} alt="" style={styles.chimes} class="img-responsive center-block" />
+                            </a>
+                        </div>
+
                     </div>
-                    <div className="col-md-4">
-                        <a href="http://www.thepinnacleroof.com" target="_blank" rel="noopener noreferrer">
-                            <img src={pinnacleLogo} alt="" style={styles.pinnacle} className="img-responsive center-block" />
-                        </a>
-                    </div>
-                    <div className="col-md-4">
-                        <a href="https://www.thechimes.com/" target="_blank" rel="noopener noreferrer">
-                            <img src={chimesLogo} alt="" style={styles.chimes} class="img-responsive center-block" />
-                        </a>
+                    <div className="col-md-12">
+                        <div className="col-md-offset-4 col-md-4">
+                            <a href="http://www.afd-furniture.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={americanFactoryDirectLogo} alt="" style={styles.americanFactoryDirect} class="img-responsive center-block" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,7 +118,12 @@ const sponsorPage = () => {
                         </div>
                     </div>
                     <div className="col-md-12">
-                        <div>
+                        <div className="col-md-6">
+                            <a href="https://www.bluetigerspa.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={blueTigerLogo} alt="" style={styles.blueTiger} class="img-responsive center-block" />
+                            </a>
+                        </div>
+                        <div className="col-md-6">
                             <a href="http://www.louisianafishfry.com" target="_blank" rel="noopener noreferrer">
                                 <img src={louisianaFishFryLogo} alt="" style={styles.louisianaFishFry} class="img-responsive center-block" />
                             </a>

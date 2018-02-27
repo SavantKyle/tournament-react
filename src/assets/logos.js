@@ -10,5 +10,22 @@ import mansursLogo from './Mansurs.png';
 import ruffinosLogo from './Ruffinos.jpg';
 import flemingsLogo from './Flemings.png'; 
 import transformyxLogo from './Transformyx.png'; 
+import americanFactoryDirectLogo from './americanFactoryDirectLogo.png'; 
+import blueTigerLogo from './blueTigerLogo.jpg';
 
-export { kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo, chimesLogo, cokeLogo, mansursLogo, ruffinosLogo, flemingsLogo, transformyxLogo } 
+export { 
+    kickstandsKitchenLogo, 
+    sushiMasaLogo, 
+    theLondonerLogo, 
+    pinnacleLogo, 
+    raisingCanesLogo, 
+    louisianaFishFryLogo, 
+    chimesLogo, 
+    cokeLogo, 
+    mansursLogo, 
+    ruffinosLogo, 
+    flemingsLogo, 
+    transformyxLogo, 
+    americanFactoryDirectLogo, 
+    blueTigerLogo 
+} 
