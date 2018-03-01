@@ -54,14 +54,15 @@ class RegistrationForm extends Component {
                 }
             };
 
-            axios.post('https://www.crawfishcuptennis.com/api/register/RegisterTeam', teamAndPaymentInfo)
+            console.log(teamAndPaymentInfo);
+            axios.post('https://crawfishcuptennis.com/api/register/RegisterTeam', teamAndPaymentInfo)
                 .then(response =>
                     this.setState({ success: true, disabled: false })
                 )
                 .catch(error => {
                     this.setState({ disabled: false });
                     console.log(error)
-                    alert('Something went wrong with your payment. If this continues to occur please notify Kyle at kyle.savant@outlook.com')
+                    alert(`${error}. Something went wrong with your payment. If this continues to occur please notify Kyle at kyle.savant@outlook.com or text at 225-223-8809.`)
                 });
         });
     }
