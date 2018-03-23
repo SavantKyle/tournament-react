@@ -11,7 +11,11 @@ import ruffinosLogo from './Ruffinos.jpg';
 import flemingsLogo from './Flemings.png'; 
 import transformyxLogo from './Transformyx.png'; 
 import americanFactoryDirectLogo from './americanFactoryDirectLogo.png'; 
-import blueTigerLogo from './blueTigerLogo.jpg';
+import calandroLogo from './calandroLogo.png'; 
+import natashaEngleLogo from './natashaEngleLogo_forWeb.png'; 
+import sonicLogo from './sonicLogo.png';
+import republicFinanceLogo from './republicFinanceLogo_ForWeb.png';
+import laMadeleineLogo from './LaMadeleineLogo_ForWeb.png';
 
 export { 
     kickstandsKitchenLogo, 
@@ -27,5 +31,9 @@ export {
     flemingsLogo, 
     transformyxLogo, 
     americanFactoryDirectLogo, 
-    blueTigerLogo 
+    calandroLogo, 
+    natashaEngleLogo, 
+    sonicLogo, 
+    republicFinanceLogo, 
+    laMadeleineLogo
 } 

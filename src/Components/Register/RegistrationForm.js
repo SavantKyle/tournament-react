@@ -135,13 +135,15 @@ class RegistrationForm extends Component {
     }
 
     calculateCost = (players) => {
-        let cost = 0;
-        if (new Date() < new Date(2018, 2, 1)) {
-            cost = (75 * 6) + ((players.length - 6) * 25);
-        }
-        else {
-            cost = (85 * 6) + ((players.length - 6) * 35);
-        }
+        // let cost = 0;
+        // if (new Date() < new Date(2018, 2, 1)) {
+        //     cost = (75 * 6) + ((players.length - 6) * 25);
+        // }
+        // else {
+        //     cost = (85 * 6) + ((players.length - 6) * 35);
+        // }
+
+        let cost = (85 * 6) + ((players.length - 6) * 35);
 
         this.setState({ totalTeamCost: cost });
     }
