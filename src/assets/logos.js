@@ -16,6 +16,9 @@ import natashaEngleLogo from './natashaEngleLogo_forWeb.png';
 import sonicLogo from './sonicLogo.png';
 import republicFinanceLogo from './republicFinanceLogo_ForWeb.png';
 import laMadeleineLogo from './LaMadeleineLogo_ForWeb.png';
+import deltaPhysicalTherapyLogo from './DeltaPhysicalTherapyLogo_ForWeb.png'; 
+import reginellisLogo from './ReginellisLogo_ForWeb.png'; 
+import miPadresLogo from './MiPadresLogo_ForWeb.png';
 
 export { 
     kickstandsKitchenLogo, 
@@ -35,5 +38,8 @@ export {
     natashaEngleLogo, 
     sonicLogo, 
     republicFinanceLogo, 
-    laMadeleineLogo
+    laMadeleineLogo, 
+    deltaPhysicalTherapyLogo, 
+    reginellisLogo, 
+    miPadresLogo
 } 

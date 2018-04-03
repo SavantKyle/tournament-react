@@ -8,6 +8,11 @@ const homePage = (props) => {
                 <img src={crawfishCupLogo} alt="img" className="img-responsive" />
             </div>
             <div className="col-md-6 lead">
+                <h2 className="text-center text-danger">TOURNAMENT IS FULL</h2>
+                <p className="text-center text-danger">
+                    If you were intending on getting registered by the deadline but were unable to register please
+                    send an email to <a href="mailto:kyle.savant@outlook.com">kyle.savant@outlook.com</a> and we will add your team to the waiting list.
+                </p>
                 <h1 className="text-center">
                     Welcome to the 2018 Crawfish Cup
                 </h1>
@@ -19,9 +24,9 @@ const homePage = (props) => {
                     Thanks to your support last year our tournament was honored with two awards <br />
 
                     <strong>Adult Tournament of the Year for the State of Louisiana </strong>
-                    <br/>
+                    <br />
                     AND
-                    <br/>
+                    <br />
                     <strong>Adult Tournament of the Year for the Southern Section</strong>
 
                     <br /><br />

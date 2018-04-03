@@ -2,13 +2,14 @@ import React from 'react';
 import {
     kickstandsKitchenLogo, sushiMasaLogo, theLondonerLogo, pinnacleLogo, raisingCanesLogo, louisianaFishFryLogo,
     chimesLogo, cokeLogo, mansursLogo, ruffinosLogo, flemingsLogo, transformyxLogo, americanFactoryDirectLogo,
-    calandroLogo, natashaEngleLogo, sonicLogo, republicFinanceLogo, laMadeleineLogo
+    calandroLogo, natashaEngleLogo, sonicLogo, republicFinanceLogo, laMadeleineLogo, deltaPhysicalTherapyLogo,
+    reginellisLogo, miPadresLogo
 } from '../../assets/logos';
 
 const sponsorPage = () => {
     const styles = {
         kickstands: { width: "200px" },
-        sushiMasa: { width: "80%", marginTop: "90px", marginBottom: "60px" },
+        sushiMasa: { width: "80%", marginTop: "70px", marginBottom: "60px" },
         theLondoner: { width: "300px", marginTop: "20px" },
         pinnacle: { width: "375px" },
         flemings: { width: "400px" },
@@ -20,11 +21,14 @@ const sponsorPage = () => {
         ruffinos: { width: "450px", marginTop: "0px" },
         calandro: { width: "300", marginTop: "80px" },
         transformyx: { width: "900px" },
-        americanFactoryDirect: { width: "550px", marginTop: "80px" },
         natashaEngle: { width: "400px", marginTop: "0px" },
+        americanFactoryDirect: { width: "550px", marginTop: "110px" },
+        delta: { width: "500px", marginTop: "20px" },
         sonic: { width: "400px", marginTop: "60px" },
         republicFinance: { width: "500px", marginTop: "40px" },
-        laMadeleine: { width: "400px", marginTop: "40px" }
+        laMadeleine: { width: "400px", marginTop: "40px" },
+        reginelli: { width: "400px", marginTop: "40px" },
+        miPadres: { width: "400px", marginTop: "40px" }
     }
 
     return (
@@ -89,16 +93,23 @@ const sponsorPage = () => {
                 <div className="panel-body">
                     <div className="col-md-12">
                         <div className="col-md-4">
-                            <a href="http://www.afd-furniture.com/" target="_blank" rel="noopener noreferrer">
-                                <img src={americanFactoryDirectLogo} alt="" style={styles.americanFactoryDirect} class="img-responsive center-block" />
-                            </a>
-                        </div>
-                        <div className="col-md-4">
                             <a href="http://www.natashaengle.com" target="_blank" rel="noopener noreferrer">
                                 <img src={natashaEngleLogo} alt="" style={styles.natashaEngle} class="img-responsive center-block" />
                             </a>
                         </div>
                         <div className="col-md-4">
+                            <a href="http://www.afd-furniture.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={americanFactoryDirectLogo} alt="" style={styles.americanFactoryDirect} class="img-responsive center-block" />
+                            </a>
+                        </div>
+                        <div className="col-md-4">
+                            <a href="https://deltabatonrouge.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={deltaPhysicalTherapyLogo} alt="" style={styles.delta} class="img-responsive center-block" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-md-12">
+                        <div className="col-xs-offset-4 col-md-4">
                             <a href="https://www.sonicdrivein.com" target="_blank" rel="noopener noreferrer">
                                 <img src={sonicLogo} alt="" style={styles.sonic} class="img-responsive center-block" />
                             </a>
@@ -138,8 +149,8 @@ const sponsorPage = () => {
                             </a>
                         </div>
                         <div className="col-md-4">
-                            <a href="http://www.sushimasabatonrouge.com" target="_blank" rel="noopener noreferrer">
-                                <img src={sushiMasaLogo} alt="" style={styles.sushiMasa} className="img-responsive center-block" />
+                            <a href="https://www.raisingcanes.com" target="_blank" rel="noopener noreferrer">
+                                <img src={raisingCanesLogo} alt="" style={styles.raisingCanes} class="img-responsive center-block" />
                             </a>
                         </div>
                         <div className="col-md-4">
@@ -149,12 +160,24 @@ const sponsorPage = () => {
                         </div>
                     </div>
                     <div className="col-md-12">
-                        <div className="col-md-6">
-                            <a href="https://www.raisingcanes.com" target="_blank" rel="noopener noreferrer">
-                                <img src={raisingCanesLogo} alt="" style={styles.raisingCanes} class="img-responsive center-block" />
+                        <div className="col-md-4">
+                            <a href="http://www.sushimasabatonrouge.com" target="_blank" rel="noopener noreferrer">
+                                <img src={sushiMasaLogo} alt="" style={styles.sushiMasa} className="img-responsive center-block" />
                             </a>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-4">
+                            <a href="https://www.reginellis.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={reginellisLogo} alt="" style={styles.reginelli} class="img-responsive center-block" />
+                            </a>
+                        </div>
+                        <div className="col-md-4">
+                            <a href="https://www.reginellis.com/" target="_blank" rel="noopener noreferrer">
+                                <img src={miPadresLogo} alt="" style={styles.miPadres} class="img-responsive center-block" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="col-md-12">
+                        <div className="col-xs-offset-4 col-md-4">
                             <a href="https://us.coca-cola.com/" target="_blank" rel="noopener noreferrer">
                                 <img src={cokeLogo} alt="" style={styles.coke} class="img-responsive center-block" />
                             </a>
